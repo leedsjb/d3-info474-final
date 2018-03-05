@@ -248,7 +248,6 @@ mouseG.append('svg:rect')
 //get the mouse per line. 
 d3v3.selectAll(".mouse-per-line")
     .attr("transform", function(d, i) {
-    console.log(width/mouse[0])
     var xDate = x.invert(mouse[0]),
         bisect = d3v3.bisector(function(d) { return d.date; }).right;
         idx = bisect(d.values, xDate);
@@ -269,7 +268,7 @@ d3v3.selectAll(".mouse-per-line")
     }
     
     d3v3.select(this).select('text')
-        .text(y.invert(pos.y).toFixed(2));
+        .text(y.invert(pos.y).toFixed(0));
         
     return "translate(" + mouse[0] + "," + pos.y +")";
     });
