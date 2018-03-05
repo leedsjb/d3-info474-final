@@ -1,0 +1,425 @@
+,carrier_name,Abbr,a_sum,state,fips
+1,Alaska Airlines Inc.,AK,29655,Alaska,US02
+2,Alaska Airlines Inc.,AZ,2749,Arizona,US04
+3,Alaska Airlines Inc.,CA,33632,California,US06
+4,Alaska Airlines Inc.,CO,1571,Colorado,US08
+5,Alaska Airlines Inc.,DC,1668,District of Columbia,US11
+6,Alaska Airlines Inc.,FL,1780,Florida,US12
+7,Alaska Airlines Inc.,GA,729,Georgia,US13
+8,Alaska Airlines Inc.,HI,7172,Hawaii,US15
+9,Alaska Airlines Inc.,ID,177,Idaho,US16
+10,Alaska Airlines Inc.,IL,1912,Illinois,US17
+11,Alaska Airlines Inc.,IN,204,Indiana,US18
+12,Alaska Airlines Inc.,LA,334,Louisiana,US22
+13,Alaska Airlines Inc.,MA,1572,Massachusetts,US25
+14,Alaska Airlines Inc.,MD,994,Maryland,US24
+15,Alaska Airlines Inc.,MI,530,Michigan,US26
+16,Alaska Airlines Inc.,MN,724,Minnesota,US27
+17,Alaska Airlines Inc.,MO,1012,Missouri,US29
+18,Alaska Airlines Inc.,NC,334,North Carolina,US37
+19,Alaska Airlines Inc.,NE,332,Nebraska,US31
+20,Alaska Airlines Inc.,NJ,1751,New Jersey,US34
+21,Alaska Airlines Inc.,NM,334,New Mexico,US35
+22,Alaska Airlines Inc.,NV,4184,Nevada,US32
+23,Alaska Airlines Inc.,NY,359,New York,US36
+24,Alaska Airlines Inc.,OR,14139,Oregon,US41
+25,Alaska Airlines Inc.,PA,431,Pennsylvania,US42
+26,Alaska Airlines Inc.,SC,191,South Carolina,US45
+27,Alaska Airlines Inc.,TN,335,Tennessee,US47
+28,Alaska Airlines Inc.,TX,2983,Texas,US48
+29,Alaska Airlines Inc.,UT,2163,Utah,US49
+30,Alaska Airlines Inc.,WA,55734,Washington,US53
+31,American Airlines Inc.,AK,287,Alaska,US02
+32,American Airlines Inc.,AR,18,Arkansas,US05
+33,American Airlines Inc.,AZ,54488,Arizona,US04
+34,American Airlines Inc.,CA,74384,California,US06
+35,American Airlines Inc.,CO,12548,Colorado,US08
+36,American Airlines Inc.,CT,4091,Connecticut,US09
+37,American Airlines Inc.,DC,25888,District of Columbia,US11
+38,American Airlines Inc.,FL,93255,Florida,US12
+39,American Airlines Inc.,GA,11391,Georgia,US13
+40,American Airlines Inc.,HI,6477,Hawaii,US15
+41,American Airlines Inc.,IA,1534,Iowa,US19
+42,American Airlines Inc.,ID,1015,Idaho,US16
+43,American Airlines Inc.,IL,58344,Illinois,US17
+44,American Airlines Inc.,IN,3437,Indiana,US18
+45,American Airlines Inc.,KS,338,Kansas,US20
+46,American Airlines Inc.,KY,235,Kentucky,US21
+47,American Airlines Inc.,LA,6618,Louisiana,US22
+48,American Airlines Inc.,MA,23966,Massachusetts,US25
+49,American Airlines Inc.,MD,5338,Maryland,US24
+50,American Airlines Inc.,ME,682,Maine,US23
+51,American Airlines Inc.,MI,5692,Michigan,US26
+52,American Airlines Inc.,MN,7994,Minnesota,US27
+53,American Airlines Inc.,MO,11758,Missouri,US29
+54,American Airlines Inc.,MT,131,Montana,US30
+55,American Airlines Inc.,NC,98900,North Carolina,US37
+56,American Airlines Inc.,NE,1730,Nebraska,US31
+57,American Airlines Inc.,NH,26,New Hampshire,US33
+58,American Airlines Inc.,NJ,6909,New Jersey,US34
+59,American Airlines Inc.,NM,1664,New Mexico,US35
+60,American Airlines Inc.,NV,15485,Nevada,US32
+61,American Airlines Inc.,NY,39304,New York,US36
+62,American Airlines Inc.,OH,5732,Ohio,US39
+63,American Airlines Inc.,OK,4411,Oklahoma,US40
+64,American Airlines Inc.,OR,3868,Oregon,US41
+65,American Airlines Inc.,PA,45709,Pennsylvania,US42
+66,American Airlines Inc.,PR,5043,Puerto Rico,US72
+67,American Airlines Inc.,RI,2221,Rhode Island,US44
+68,American Airlines Inc.,SC,1614,South Carolina,US45
+69,American Airlines Inc.,TN,7423,Tennessee,US47
+70,American Airlines Inc.,TX,150955,Texas,US48
+71,American Airlines Inc.,UT,4226,Utah,US49
+72,American Airlines Inc.,VA,4091,Virginia,US51
+73,American Airlines Inc.,VI,2175,Virgin Islands,US78
+74,American Airlines Inc.,WA,8859,Washington,US53
+75,American Airlines Inc.,WI,1780,Wisconsin,US55
+76,American Airlines Inc.,WY,570,Wyoming,US56
+77,Delta Air Lines Inc.,AK,NA,Alaska,US02
+78,Delta Air Lines Inc.,AL,5246,Alabama,US01
+79,Delta Air Lines Inc.,AR,2510,Arkansas,US05
+80,Delta Air Lines Inc.,AZ,7550,Arizona,US04
+81,Delta Air Lines Inc.,CA,58063,California,US06
+82,Delta Air Lines Inc.,CO,9720,Colorado,US08
+83,Delta Air Lines Inc.,CT,4023,Connecticut,US09
+84,Delta Air Lines Inc.,DC,10929,District of Columbia,US11
+85,Delta Air Lines Inc.,FL,74601,Florida,US12
+86,Delta Air Lines Inc.,GA,227402,Georgia,US13
+87,Delta Air Lines Inc.,HI,4882,Hawaii,US15
+88,Delta Air Lines Inc.,IA,1233,Iowa,US19
+89,Delta Air Lines Inc.,ID,1018,Idaho,US16
+90,Delta Air Lines Inc.,IL,NA,Illinois,US17
+91,Delta Air Lines Inc.,IN,4994,Indiana,US18
+92,Delta Air Lines Inc.,KS,965,Kansas,US20
+93,Delta Air Lines Inc.,KY,3623,Kentucky,US21
+94,Delta Air Lines Inc.,LA,7358,Louisiana,US22
+95,Delta Air Lines Inc.,MA,14739,Massachusetts,US25
+96,Delta Air Lines Inc.,MD,6643,Maryland,US24
+97,Delta Air Lines Inc.,ME,844,Maine,US23
+98,Delta Air Lines Inc.,MI,57014,Michigan,US26
+99,Delta Air Lines Inc.,MN,61716,Minnesota,US27
+100,Delta Air Lines Inc.,MO,10861,Missouri,US29
+101,Delta Air Lines Inc.,MS,3082,Mississippi,US28
+102,Delta Air Lines Inc.,MT,3284,Montana,US30
+103,Delta Air Lines Inc.,NC,14882,North Carolina,US37
+104,Delta Air Lines Inc.,ND,NA,North Dakota,US38
+105,Delta Air Lines Inc.,NE,2850,Nebraska,US31
+106,Delta Air Lines Inc.,NH,361,New Hampshire,US33
+107,Delta Air Lines Inc.,NJ,5109,New Jersey,US34
+108,Delta Air Lines Inc.,NM,1308,New Mexico,US35
+109,Delta Air Lines Inc.,NV,12928,Nevada,US32
+110,Delta Air Lines Inc.,NY,55139,New York,US36
+111,Delta Air Lines Inc.,OH,15224,Ohio,US39
+112,Delta Air Lines Inc.,OK,2619,Oklahoma,US40
+113,Delta Air Lines Inc.,OR,6682,Oregon,US41
+114,Delta Air Lines Inc.,PA,11624,Pennsylvania,US42
+115,Delta Air Lines Inc.,PR,2417,Puerto Rico,US72
+116,Delta Air Lines Inc.,RI,1574,Rhode Island,US44
+117,Delta Air Lines Inc.,SC,8278,South Carolina,US45
+118,Delta Air Lines Inc.,SD,1054,South Dakota,US46
+119,Delta Air Lines Inc.,TN,11850,Tennessee,US47
+120,Delta Air Lines Inc.,TX,21530,Texas,US48
+121,Delta Air Lines Inc.,UT,40520,Utah,US49
+122,Delta Air Lines Inc.,VA,6550,Virginia,US51
+123,Delta Air Lines Inc.,VI,975,Virgin Islands,US78
+124,Delta Air Lines Inc.,VT,311,Vermont,US50
+125,Delta Air Lines Inc.,WA,21283,Washington,US53
+126,Delta Air Lines Inc.,WI,8902,Wisconsin,US55
+127,Delta Air Lines Inc.,WV,323,West Virginia,US54
+128,Delta Air Lines Inc.,WY,959,Wyoming,US56
+129,ExpressJet Airlines Inc.,AL,8200,Alabama,US01
+130,ExpressJet Airlines Inc.,AR,5277,Arkansas,US05
+131,ExpressJet Airlines Inc.,AZ,325,Arizona,US04
+132,ExpressJet Airlines Inc.,CO,NA,Colorado,US08
+133,ExpressJet Airlines Inc.,CT,155,Connecticut,US09
+134,ExpressJet Airlines Inc.,DC,3745,District of Columbia,US11
+135,ExpressJet Airlines Inc.,FL,5739,Florida,US12
+136,ExpressJet Airlines Inc.,GA,40344,Georgia,US13
+137,ExpressJet Airlines Inc.,IA,1340,Iowa,US19
+138,ExpressJet Airlines Inc.,IL,25249,Illinois,US17
+139,ExpressJet Airlines Inc.,IN,3394,Indiana,US18
+140,ExpressJet Airlines Inc.,KS,2279,Kansas,US20
+141,ExpressJet Airlines Inc.,KY,3126,Kentucky,US21
+142,ExpressJet Airlines Inc.,LA,15897,Louisiana,US22
+143,ExpressJet Airlines Inc.,MA,1739,Massachusetts,US25
+144,ExpressJet Airlines Inc.,MD,498,Maryland,US24
+145,ExpressJet Airlines Inc.,ME,2051,Maine,US23
+146,ExpressJet Airlines Inc.,MI,10267,Michigan,US26
+147,ExpressJet Airlines Inc.,MN,3585,Minnesota,US27
+148,ExpressJet Airlines Inc.,MO,5480,Missouri,US29
+149,ExpressJet Airlines Inc.,MS,NA,Mississippi,US28
+150,ExpressJet Airlines Inc.,NC,8537,North Carolina,US37
+151,ExpressJet Airlines Inc.,ND,411,North Dakota,US38
+152,ExpressJet Airlines Inc.,NE,2523,Nebraska,US31
+153,ExpressJet Airlines Inc.,NH,877,New Hampshire,US33
+154,ExpressJet Airlines Inc.,NJ,21939,New Jersey,US34
+155,ExpressJet Airlines Inc.,NM,1881,New Mexico,US35
+156,ExpressJet Airlines Inc.,NY,NA,New York,US36
+157,ExpressJet Airlines Inc.,OH,12636,Ohio,US39
+158,ExpressJet Airlines Inc.,OK,3619,Oklahoma,US40
+159,ExpressJet Airlines Inc.,PA,3100,Pennsylvania,US42
+160,ExpressJet Airlines Inc.,RI,694,Rhode Island,US44
+161,ExpressJet Airlines Inc.,SC,5953,South Carolina,US45
+162,ExpressJet Airlines Inc.,SD,513,South Dakota,US46
+163,ExpressJet Airlines Inc.,TN,8955,Tennessee,US47
+164,ExpressJet Airlines Inc.,TX,66707,Texas,US48
+165,ExpressJet Airlines Inc.,UT,1,Utah,US49
+166,ExpressJet Airlines Inc.,VA,8687,Virginia,US51
+167,ExpressJet Airlines Inc.,VT,1472,Vermont,US50
+168,ExpressJet Airlines Inc.,WI,5427,Wisconsin,US55
+169,ExpressJet Airlines Inc.,WV,1228,West Virginia,US54
+170,Frontier Airlines Inc.,AZ,2762,Arizona,US04
+171,Frontier Airlines Inc.,CA,5807,California,US06
+172,Frontier Airlines Inc.,CO,21167,Colorado,US08
+173,Frontier Airlines Inc.,DC,1926,District of Columbia,US11
+174,Frontier Airlines Inc.,FL,15147,Florida,US12
+175,Frontier Airlines Inc.,GA,3121,Georgia,US13
+176,Frontier Airlines Inc.,IA,550,Iowa,US19
+177,Frontier Airlines Inc.,IL,2885,Illinois,US17
+178,Frontier Airlines Inc.,IN,723,Indiana,US18
+179,Frontier Airlines Inc.,LA,816,Louisiana,US22
+180,Frontier Airlines Inc.,MI,1125,Michigan,US26
+181,Frontier Airlines Inc.,MN,1027,Minnesota,US27
+182,Frontier Airlines Inc.,MO,1928,Missouri,US29
+183,Frontier Airlines Inc.,MT,163,Montana,US30
+184,Frontier Airlines Inc.,NC,1830,North Carolina,US37
+185,Frontier Airlines Inc.,ND,169,North Dakota,US38
+186,Frontier Airlines Inc.,NE,331,Nebraska,US31
+187,Frontier Airlines Inc.,NJ,1983,New Jersey,US34
+188,Frontier Airlines Inc.,NM,36,New Mexico,US35
+189,Frontier Airlines Inc.,NV,6679,Nevada,US32
+190,Frontier Airlines Inc.,NY,1363,New York,US36
+191,Frontier Airlines Inc.,OH,7232,Ohio,US39
+192,Frontier Airlines Inc.,OK,47,Oklahoma,US40
+193,Frontier Airlines Inc.,OR,855,Oregon,US41
+194,Frontier Airlines Inc.,PA,3892,Pennsylvania,US42
+195,Frontier Airlines Inc.,PR,352,Puerto Rico,US72
+196,Frontier Airlines Inc.,RI,359,Rhode Island,US44
+197,Frontier Airlines Inc.,SD,248,South Dakota,US46
+198,Frontier Airlines Inc.,TN,1328,Tennessee,US47
+199,Frontier Airlines Inc.,TX,3947,Texas,US48
+200,Frontier Airlines Inc.,UT,1280,Utah,US49
+201,Frontier Airlines Inc.,WA,803,Washington,US53
+202,Frontier Airlines Inc.,WI,1620,Wisconsin,US55
+203,Hawaiian Airlines Inc.,AZ,334,Arizona,US04
+204,Hawaiian Airlines Inc.,CA,4280,California,US06
+205,Hawaiian Airlines Inc.,HI,66509,Hawaii,US15
+206,Hawaiian Airlines Inc.,NV,843,Nevada,US32
+207,Hawaiian Airlines Inc.,NY,324,New York,US36
+208,Hawaiian Airlines Inc.,OR,334,Oregon,US41
+209,Hawaiian Airlines Inc.,TT,108,NA,USNA
+210,Hawaiian Airlines Inc.,WA,668,Washington,US53
+211,JetBlue Airways,AK,211,Alaska,US02
+212,JetBlue Airways,AZ,668,Arizona,US04
+213,JetBlue Airways,CA,29784,California,US06
+214,JetBlue Airways,CO,1036,Colorado,US08
+215,JetBlue Airways,CT,3426,Connecticut,US09
+216,JetBlue Airways,DC,11639,District of Columbia,US11
+217,JetBlue Airways,FL,60557,Florida,US12
+218,JetBlue Airways,GA,2220,Georgia,US13
+219,JetBlue Airways,IL,2257,Illinois,US17
+220,JetBlue Airways,LA,1632,Louisiana,US22
+221,JetBlue Airways,MA,46333,Massachusetts,US25
+222,JetBlue Airways,MD,2654,Maryland,US24
+223,JetBlue Airways,ME,1137,Maine,US23
+224,JetBlue Airways,MI,1297,Michigan,US26
+225,JetBlue Airways,NC,4121,North Carolina,US37
+226,JetBlue Airways,NJ,8552,New Jersey,US34
+227,JetBlue Airways,NM,288,New Mexico,US35
+228,JetBlue Airways,NV,5702,Nevada,US32
+229,JetBlue Airways,NY,56691,New York,US36
+230,JetBlue Airways,OH,1268,Ohio,US39
+231,JetBlue Airways,OR,1285,Oregon,US41
+232,JetBlue Airways,PA,4031,Pennsylvania,US42
+233,JetBlue Airways,PR,10231,Puerto Rico,US72
+234,JetBlue Airways,RI,984,Rhode Island,US44
+235,JetBlue Airways,SC,2581,South Carolina,US45
+236,JetBlue Airways,TN,998,Tennessee,US47
+237,JetBlue Airways,TX,3406,Texas,US48
+238,JetBlue Airways,UT,2238,Utah,US49
+239,JetBlue Airways,VA,2421,Virginia,US51
+240,JetBlue Airways,VI,1104,Virgin Islands,US78
+241,JetBlue Airways,VT,1076,Vermont,US50
+242,JetBlue Airways,WA,1839,Washington,US53
+243,SkyWest Airlines Inc.,AK,NA,Alaska,US02
+244,SkyWest Airlines Inc.,AL,3153,Alabama,US01
+245,SkyWest Airlines Inc.,AR,2809,Arkansas,US05
+246,SkyWest Airlines Inc.,AZ,22351,Arizona,US04
+247,SkyWest Airlines Inc.,CA,121278,California,US06
+248,SkyWest Airlines Inc.,CO,52677,Colorado,US08
+249,SkyWest Airlines Inc.,CT,433,Connecticut,US09
+250,SkyWest Airlines Inc.,DC,2659,District of Columbia,US11
+251,SkyWest Airlines Inc.,FL,344,Florida,US12
+252,SkyWest Airlines Inc.,GA,12415,Georgia,US13
+253,SkyWest Airlines Inc.,IA,5862,Iowa,US19
+254,SkyWest Airlines Inc.,ID,14064,Idaho,US16
+255,SkyWest Airlines Inc.,IL,79668,Illinois,US17
+256,SkyWest Airlines Inc.,IN,11062,Indiana,US18
+257,SkyWest Airlines Inc.,KS,3632,Kansas,US20
+258,SkyWest Airlines Inc.,KY,3605,Kentucky,US21
+259,SkyWest Airlines Inc.,LA,1798,Louisiana,US22
+260,SkyWest Airlines Inc.,MA,43,Massachusetts,US25
+261,SkyWest Airlines Inc.,MD,203,Maryland,US24
+262,SkyWest Airlines Inc.,ME,NA,Maine,US23
+263,SkyWest Airlines Inc.,MI,49794,Michigan,US26
+264,SkyWest Airlines Inc.,MN,39769,Minnesota,US27
+265,SkyWest Airlines Inc.,MO,5431,Missouri,US29
+266,SkyWest Airlines Inc.,MS,1309,Mississippi,US28
+267,SkyWest Airlines Inc.,MT,10047,Montana,US30
+268,SkyWest Airlines Inc.,NC,4917,North Carolina,US37
+269,SkyWest Airlines Inc.,ND,8245,North Dakota,US38
+270,SkyWest Airlines Inc.,NE,5473,Nebraska,US31
+271,SkyWest Airlines Inc.,NH,242,New Hampshire,US33
+272,SkyWest Airlines Inc.,NJ,1237,New Jersey,US34
+273,SkyWest Airlines Inc.,NM,2876,New Mexico,US35
+274,SkyWest Airlines Inc.,NV,5507,Nevada,US32
+275,SkyWest Airlines Inc.,NY,7236,New York,US36
+276,SkyWest Airlines Inc.,OH,11412,Ohio,US39
+277,SkyWest Airlines Inc.,OK,4907,Oklahoma,US40
+278,SkyWest Airlines Inc.,OR,18240,Oregon,US41
+279,SkyWest Airlines Inc.,PA,6353,Pennsylvania,US42
+280,SkyWest Airlines Inc.,RI,195,Rhode Island,US44
+281,SkyWest Airlines Inc.,SC,913,South Carolina,US45
+282,SkyWest Airlines Inc.,SD,5464,South Dakota,US46
+283,SkyWest Airlines Inc.,TN,8168,Tennessee,US47
+284,SkyWest Airlines Inc.,TX,18897,Texas,US48
+285,SkyWest Airlines Inc.,UT,43384,Utah,US49
+286,SkyWest Airlines Inc.,VA,2749,Virginia,US51
+287,SkyWest Airlines Inc.,VT,2,Vermont,US50
+288,SkyWest Airlines Inc.,WA,24024,Washington,US53
+289,SkyWest Airlines Inc.,WI,15823,Wisconsin,US55
+290,SkyWest Airlines Inc.,WV,288,West Virginia,US54
+291,SkyWest Airlines Inc.,WY,4397,Wyoming,US56
+292,Southwest Airlines Co.,AL,3848,Alabama,US01
+293,Southwest Airlines Co.,AR,2236,Arkansas,US05
+294,Southwest Airlines Co.,AZ,59693,Arizona,US04
+295,Southwest Airlines Co.,CA,216558,California,US06
+296,Southwest Airlines Co.,CO,62825,Colorado,US08
+297,Southwest Airlines Co.,CT,5969,Connecticut,US09
+298,Southwest Airlines Co.,DC,15878,District of Columbia,US11
+299,Southwest Airlines Co.,FL,100714,Florida,US12
+300,Southwest Airlines Co.,GA,38637,Georgia,US13
+301,Southwest Airlines Co.,IA,954,Iowa,US19
+302,Southwest Airlines Co.,ID,3535,Idaho,US16
+303,Southwest Airlines Co.,IL,76171,Illinois,US17
+304,Southwest Airlines Co.,IN,11883,Indiana,US18
+305,Southwest Airlines Co.,KS,1288,Kansas,US20
+306,Southwest Airlines Co.,KY,4077,Kentucky,US21
+307,Southwest Airlines Co.,LA,17936,Louisiana,US22
+308,Southwest Airlines Co.,MA,11332,Massachusetts,US25
+309,Southwest Airlines Co.,MD,66779,Maryland,US24
+310,Southwest Airlines Co.,ME,1136,Maine,US23
+311,Southwest Airlines Co.,MI,9710,Michigan,US26
+312,Southwest Airlines Co.,MN,8221,Minnesota,US27
+313,Southwest Airlines Co.,MO,56929,Missouri,US29
+314,Southwest Airlines Co.,NC,11806,North Carolina,US37
+315,Southwest Airlines Co.,NE,6257,Nebraska,US31
+316,Southwest Airlines Co.,NH,4209,New Hampshire,US33
+317,Southwest Airlines Co.,NJ,5787,New Jersey,US34
+318,Southwest Airlines Co.,NM,10512,New Mexico,US35
+319,Southwest Airlines Co.,NV,75529,Nevada,US32
+320,Southwest Airlines Co.,NY,25914,New York,US36
+321,Southwest Airlines Co.,OH,19137,Ohio,US39
+322,Southwest Airlines Co.,OK,10344,Oklahoma,US40
+323,Southwest Airlines Co.,OR,12723,Oregon,US41
+324,Southwest Airlines Co.,PA,17327,Pennsylvania,US42
+325,Southwest Airlines Co.,PR,3612,Puerto Rico,US72
+326,Southwest Airlines Co.,RI,6473,Rhode Island,US44
+327,Southwest Airlines Co.,SC,3579,South Carolina,US45
+328,Southwest Airlines Co.,TN,33192,Tennessee,US47
+329,Southwest Airlines Co.,TX,155960,Texas,US48
+330,Southwest Airlines Co.,UT,10180,Utah,US49
+331,Southwest Airlines Co.,VA,3596,Virginia,US51
+332,Southwest Airlines Co.,WA,14315,Washington,US53
+333,Southwest Airlines Co.,WI,11631,Wisconsin,US55
+334,Spirit Air Lines,AZ,752,Arizona,US04
+335,Spirit Air Lines,CA,13126,California,US06
+336,Spirit Air Lines,CO,3684,Colorado,US08
+337,Spirit Air Lines,CT,588,Connecticut,US09
+338,Spirit Air Lines,FL,30121,Florida,US12
+339,Spirit Air Lines,GA,6653,Georgia,US13
+340,Spirit Air Lines,IL,9185,Illinois,US17
+341,Spirit Air Lines,LA,3338,Louisiana,US22
+342,Spirit Air Lines,MA,4196,Massachusetts,US25
+343,Spirit Air Lines,MD,6531,Maryland,US24
+344,Spirit Air Lines,MI,8675,Michigan,US26
+345,Spirit Air Lines,MN,4329,Minnesota,US27
+346,Spirit Air Lines,MO,1331,Missouri,US29
+347,Spirit Air Lines,NJ,5739,New Jersey,US34
+348,Spirit Air Lines,NV,10837,Nevada,US32
+349,Spirit Air Lines,NY,4630,New York,US36
+350,Spirit Air Lines,OH,3645,Ohio,US39
+351,Spirit Air Lines,OR,824,Oregon,US41
+352,Spirit Air Lines,PA,4783,Pennsylvania,US42
+353,Spirit Air Lines,PR,1005,Puerto Rico,US72
+354,Spirit Air Lines,SC,4212,South Carolina,US45
+355,Spirit Air Lines,TX,13387,Texas,US48
+356,Spirit Air Lines,VI,290,Virgin Islands,US78
+357,Spirit Air Lines,WA,1701,Washington,US53
+358,Spirit Air Lines,WV,38,West Virginia,US54
+359,United Air Lines Inc.,AK,931,Alaska,US02
+360,United Air Lines Inc.,AZ,6964,Arizona,US04
+361,United Air Lines Inc.,CA,99767,California,US06
+362,United Air Lines Inc.,CO,57645,Colorado,US08
+363,United Air Lines Inc.,CT,1660,Connecticut,US09
+364,United Air Lines Inc.,DC,25245,District of Columbia,US11
+365,United Air Lines Inc.,FL,32783,Florida,US12
+366,United Air Lines Inc.,GA,5275,Georgia,US13
+367,United Air Lines Inc.,HI,9281,Hawaii,US15
+368,United Air Lines Inc.,IA,1480,Iowa,US19
+369,United Air Lines Inc.,ID,632,Idaho,US16
+370,United Air Lines Inc.,IL,67860,Illinois,US17
+371,United Air Lines Inc.,IN,1153,Indiana,US18
+372,United Air Lines Inc.,KS,638,Kansas,US20
+373,United Air Lines Inc.,KY,11,Kentucky,US21
+374,United Air Lines Inc.,LA,5020,Louisiana,US22
+375,United Air Lines Inc.,MA,11435,Massachusetts,US25
+376,United Air Lines Inc.,MD,2808,Maryland,US24
+377,United Air Lines Inc.,ME,74,Maine,US23
+378,United Air Lines Inc.,MI,2373,Michigan,US26
+379,United Air Lines Inc.,MN,4066,Minnesota,US27
+380,United Air Lines Inc.,MO,2371,Missouri,US29
+381,United Air Lines Inc.,MT,2312,Montana,US30
+382,United Air Lines Inc.,NC,4414,North Carolina,US37
+383,United Air Lines Inc.,NE,1741,Nebraska,US31
+384,United Air Lines Inc.,NJ,50047,New Jersey,US34
+385,United Air Lines Inc.,NM,860,New Mexico,US35
+386,United Air Lines Inc.,NV,12653,Nevada,US32
+387,United Air Lines Inc.,NY,9732,New York,US36
+388,United Air Lines Inc.,OH,6496,Ohio,US39
+389,United Air Lines Inc.,OK,1016,Oklahoma,US40
+390,United Air Lines Inc.,OR,8005,Oregon,US41
+391,United Air Lines Inc.,PA,6032,Pennsylvania,US42
+392,United Air Lines Inc.,PR,2231,Puerto Rico,US72
+393,United Air Lines Inc.,SC,974,South Carolina,US45
+394,United Air Lines Inc.,SD,483,South Dakota,US46
+395,United Air Lines Inc.,TN,2877,Tennessee,US47
+396,United Air Lines Inc.,TT,334,NA,USNA
+397,United Air Lines Inc.,TX,68892,Texas,US48
+398,United Air Lines Inc.,UT,1971,Utah,US49
+399,United Air Lines Inc.,VA,1286,Virginia,US51
+400,United Air Lines Inc.,VI,482,Virgin Islands,US78
+401,United Air Lines Inc.,VT,212,Vermont,US50
+402,United Air Lines Inc.,WA,9677,Washington,US53
+403,United Air Lines Inc.,WI,2118,Wisconsin,US55
+404,United Air Lines Inc.,WY,1078,Wyoming,US56
+405,Virgin America,CA,35537,California,US06
+406,Virgin America,CO,944,Colorado,US08
+407,Virgin America,DC,2658,District of Columbia,US11
+408,Virgin America,FL,1810,Florida,US12
+409,Virgin America,HI,1259,Hawaii,US15
+410,Virgin America,IL,1351,Illinois,US17
+411,Virgin America,IN,66,Indiana,US18
+412,Virgin America,LA,71,Louisiana,US22
+413,Virgin America,MA,1770,Massachusetts,US25
+414,Virgin America,MD,46,Maryland,US24
+415,Virgin America,NC,43,North Carolina,US37
+416,Virgin America,NJ,2455,New Jersey,US34
+417,Virgin America,NV,4221,Nevada,US32
+418,Virgin America,NY,4676,New York,US36
+419,Virgin America,OR,963,Oregon,US41
+420,Virgin America,PA,182,Pennsylvania,US42
+421,Virgin America,TN,87,Tennessee,US47
+422,Virgin America,TX,4441,Texas,US48
+423,Virgin America,UT,1,Utah,US49
+424,Virgin America,WA,2094,Washington,US53

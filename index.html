@@ -8,8 +8,13 @@
         <link rel="stylesheet" type ="text/css" href ="./css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/sticky-footer-navbar.css">
-        <script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
-        
+        <!-- <script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script> -->
+        <script src='./js/d3v3.js'></script>
+        <!-- imports for Jerry's vis -->
+        <link href="/d3-geomap/css/d3.geomap.css" rel="stylesheet">
+        <script src="/d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
+        <script src="/d3-geomap/js/d3.geomap.min.js"></script>
+        <script src="https://d3js.org/d3.v4.js"></script>
     </head>
     <body data-spy="scroll" data-target="#navbar" data-offset="0">
 
@@ -36,17 +41,21 @@
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
             <h1 id="presence-map">Airline Presence Across the US</h1>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
+            <div class="container text-center">
+                <div class="row">
+                    <p id="currentAirline" class="pl-5 text-info">
+                        <br>
+                    </p>
+                </div>
+                <div class="container row"> 
+                        <div id="btns" class="col-sm-12 col-md-3 btn-group-vertical"></div>
+                        <div id="map" class="pt-5 col-sm-12 col-md-9">
+                        </div>
+                </div>
+            </div>
 
             <h1 id="delay-viz">Airline Delays in a Year</h1>
-            <div id="delay-d3"></div>
-
-            <script src="./js/script.js"></script>
-            
-
+            <div id="delay-d3"></div>   
         </main>
 
         <footer class="footer">
@@ -60,5 +69,7 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="./js/d3.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>

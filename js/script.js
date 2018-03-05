@@ -2,6 +2,8 @@
 //couldn't import tsv as a variable so manually entered here
 //thankfully after the data cleaning and wranlging, I was left with a smaller 
 //dataset to throw in my script. 
+
+//locally imported d3, and changed it to d3v3 to call d3 version 3.5
 var myData = "date	Alaska	American	Delta	JetBlue	Southwest	Spirit	United	Virgin\n\
 20170101	584.05	4109.15	4106.68	1955.58	5959.4	351.87	2720.11	320.12\n\
 20170201	579.46	2822.17	2139.48	1590.47	3566.65	405.77	1924.41	193\n\
@@ -26,26 +28,26 @@ var margin = {
     height = 500 - margin.top - margin.bottom;
 
     //parse date in the data for correct format. 
-var parseDate = d3.time.format("%Y%m%d").parse;
+var parseDate = d3v3.time.format("%Y%m%d").parse;
 
 //scales 
-var x = d3.time.scale()
+var x = d3v3.time.scale()
     .range([0, width]);
 
-var y = d3.scale.linear()
+var y = d3v3.scale.linear()
     .range([height, 0]);
 
-var color = d3.scale.category10();
+var color = d3v3.scale.category10();
 
-var xAxis = d3.svg.axis()
+var xAxis = d3v3.svg.axis()
     .scale(x)
     .orient("bottom");
 
-var yAxis = d3.svg.axis()
+var yAxis = d3v3.svg.axis()
     .scale(y)
     .orient("left");
 
-var line = d3.svg.line()
+var line = d3v3.svg.line()
     .interpolate("basis")
     .x(function(d) {
     return x(d.date);
@@ -54,16 +56,16 @@ var line = d3.svg.line()
     return y(d.delay);
     });
 
-var svg = d3.select("#delay-d3").append("svg")
+var svg = d3v3.select("#delay-d3").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 //put data into datta variable to loop through
-var data = d3.tsv.parse(myData);
+var data = d3v3.tsv.parse(myData);
 
-color.domain(d3.keys(data[0]).filter(function(key) {
+color.domain(d3v3.keys(data[0]).filter(function(key) {
     return key !== "date";
 }));
 
@@ -86,20 +88,20 @@ var airlines = color.domain().map(function(name) {
 });
 
 //domains
-x.domain(d3.extent(data, function(d) {
+x.domain(d3v3.extent(data, function(d) {
     return d.date;
 }));
 
 
 //domains
 y.domain([
-    d3.min(airlines, function(c) {
-    return d3.min(c.values, function(v) {
+    d3v3.min(airlines, function(c) {
+    return d3v3.min(c.values, function(v) {
         return v.delay;
     });
     }),
-    d3.max(airlines, function(c) {
-    return d3.max(c.values, function(v) {
+    d3v3.max(airlines, function(c) {
+    return d3v3.max(c.values, function(v) {
         return v.delay;
     });
     })
@@ -219,24 +221,24 @@ mouseG.append('svg:rect')
     .attr('fill', 'none')
     .attr('pointer-events', 'all')
     .on('mouseout', function() {
-    d3.select(".mouse-line")
+    d3v3.select(".mouse-line")
         .style("opacity", "0");
-    d3.selectAll(".mouse-per-line circle")
+    d3v3.selectAll(".mouse-per-line circle")
         .style("opacity", "0");
-    d3.selectAll(".mouse-per-line text")
+    d3v3.selectAll(".mouse-per-line text")
         .style("opacity", "0");
     })
     .on('mouseover', function() { 
-    d3.select(".mouse-line")
+    d3v3.select(".mouse-line")
         .style("opacity", "1");
-    d3.selectAll(".mouse-per-line circle")
+    d3v3.selectAll(".mouse-per-line circle")
         .style("opacity", "1");
-    d3.selectAll(".mouse-per-line text")
+    d3v3.selectAll(".mouse-per-line text")
         .style("opacity", "1");
     })
     .on('mousemove', function() { 
-    var mouse = d3.mouse(this);
-    d3.select(".mouse-line")
+    var mouse = d3v3.mouse(this);
+    d3v3.select(".mouse-line")
         .attr("d", function() {
         var d = "M" + mouse[0] + "," + height;
         d += " " + mouse[0] + "," + 0;
@@ -244,11 +246,11 @@ mouseG.append('svg:rect')
         });
 
 //get the mouse per line. 
-d3.selectAll(".mouse-per-line")
+d3v3.selectAll(".mouse-per-line")
     .attr("transform", function(d, i) {
     console.log(width/mouse[0])
     var xDate = x.invert(mouse[0]),
-        bisect = d3.bisector(function(d) { return d.date; }).right;
+        bisect = d3v3.bisector(function(d) { return d.date; }).right;
         idx = bisect(d.values, xDate);
     
     var beginning = 0,
@@ -266,7 +268,7 @@ d3.selectAll(".mouse-per-line")
         else break;
     }
     
-    d3.select(this).select('text')
+    d3v3.select(this).select('text')
         .text(y.invert(pos.y).toFixed(2));
         
     return "translate(" + mouse[0] + "," + pos.y +")";
