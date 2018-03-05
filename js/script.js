@@ -269,7 +269,7 @@ d3v3.selectAll(".mouse-per-line")
     }
     
     d3v3.select(this).select('text')
-        .text(y.invert(pos.y).toFixed(2));
+        .text(y.invert(pos.y).toFixed(0));
         
     return "translate(" + mouse[0] + "," + pos.y +")";
     });
