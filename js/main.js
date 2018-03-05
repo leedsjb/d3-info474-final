@@ -17,7 +17,27 @@ var map = d3.geomap.choropleth()
     .format(format)
     .unitId('fips')
     .scale(750)
+    //4 blue hue for easier reading 
+    .colors(['#eff3ff','#bdd7e7','#6baed6','#2171b5'])
+    // blue hue
+    // .colors(["#f7fbff",
+    //     "#deebf7",
+    //     "#c6dbef",
+    //     "#9ecae1",
+    //    "#6baed6",
+    //     "#4292c6",
+    //     "#2171b5",
+    //     "#084594"])
+    //red hue
+    // .colors(["#fff5f0",
+    //     "#fee0d2",
+    //     "#fcbba1",
+    //     "#fc9272",
+    //     "#fb6a4a",
+    //     "#ef3b2c",
+    //     "#cb181d"])
     .legend(true);
+
 
 d3.queue().defer(d3.csv, "../data/flightFip.csv")
     .await(ready)
