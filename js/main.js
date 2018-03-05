@@ -41,7 +41,7 @@ function ready(error, flights) {
         btn.classList.add("btn-outline-secondary")
         btn.innerHTML = e;
         btn.name = e;
-        btn.addEventListener("click", () => {filterAirline(e, display)
+        btn.addEventListener("mouseover", () => {filterAirline(e, display)
             currentTitle.innerHTML = e
         })
         btngroup.appendChild(btn);
