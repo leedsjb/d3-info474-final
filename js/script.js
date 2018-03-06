@@ -15,7 +15,8 @@ var myData = "date	Alaska	American	Delta	JetBlue	Southwest	Spirit	United	Virgin\
 20170801	601.84	4716.71	3383.88	2437.11	8555.61	441.61	2238.87	322.48\n\
 20170901	501.46	3053.86	2435.96	1424.02	4481.91	517.22	1402.94	243.97\n\
 20171001	489.67	3533.91	2840.21	1294.05	5113.6	348.4	1613.06	275.69\n\
-20171101	482.84	2814.68	1810.87	1114.65	4530.07	330.23	1344.13	256.68\n";
+20171101	482.84	2814.68	1810.87	1114.65	4530.07	330.23	1344.13	256.68\n\
+20171201	659.59	4034.71	3366.50	2116.04	7126.21	526.90	1901.22	330.28\n";
 
 //margins
 var margin = {
@@ -25,7 +26,7 @@ var margin = {
     left: 55
     },
     width = 1000 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 500 - margin.top - margin.bottom; 
 
     //parse date in the data for correct format. 
 var parseDate = d3v3.time.format("%Y%m%d").parse;
