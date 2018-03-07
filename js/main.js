@@ -41,7 +41,7 @@ var map = d3.geomap.choropleth()
     .legend(true);
 
 
-d3.queue().defer(d3.csv, "../data/flightFip.csv")
+d3.queue().defer(d3.csv, dir + "/data/flightFip.csv")
     .await(ready)
 
 d3.select('#map').call(map.draw, map);
