@@ -9,8 +9,10 @@ var format = function(d){
     return d3.format('.0f')(d) + 'K';
 }
 
+var dir = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+
 var map = d3.geomap.choropleth()
-    .geofile('/d3-geomap/topojson/countries/USA.json')
+    .geofile(dir + '/d3-geomap/topojson/countries/USA.json')
     .projection(d3.geo.albersUsa)
     // .column(the colum with flight departure data)
     .column('a_sum')
