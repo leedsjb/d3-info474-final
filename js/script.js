@@ -38,6 +38,7 @@ var x = d3v3.time.scale()
 var y = d3v3.scale.linear()
     .range([height, 0]);
 
+// construct ordinal scale with range of ten categorical colors:
 var color = d3v3.scale.category10();
 
 var xAxis = d3v3.svg.axis()
@@ -63,12 +64,17 @@ var svg = d3v3.select("#delay-d3").append("svg")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-//put data into datta variable to loop through
+// put data into data variable to loop through
+// TODO ** this is an async function, needs to be refactored as such
 var data = d3v3.tsv.parse(myData);
 
-color.domain(d3v3.keys(data[0]).filter(function(key) {
+// retrieve airline names from .tsv data, filter out 1st column called "date"
+let airlineNames = d3v3.keys(data[0]).filter(function(key) {
     return key !== "date";
-}));
+})
+
+// set the domain of the previously created nominal color scale
+color.domain(airlineNames);
 
 //parse through the date and assign pased date into our data values variable
 data.forEach(function(d) {
@@ -76,16 +82,19 @@ data.forEach(function(d) {
 });
 
 //correctly setup the airline infomraiton with a dict. 
-var airlines = color.domain().map(function(name) {
+// airlines is a new array, color.domain()
+var airlines = color.domain().map(function(name) { 
+
     return {
-    name: name,
-    values: data.map(function(d) {
-        return {
-        date: d.date,
-        delay: +d[name]
-        };
-    })
+        name: name,
+        values: data.map(function(d) {
+            return {
+            date: d.date,
+            delay: +d[name]
+            };
+        })
     };
+
 });
 
 //domains
