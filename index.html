@@ -22,37 +22,34 @@
             <nav id="navbar" class="navbar navbar-dark fixed-top bg-dark">
                 <a class="navbar-brand" href="#">Life of a Flight</a>
                 <ul class="nav nav-pills">
+                     <li class="nav-item">
+                        <a class="nav-link" href="#presence-map">Airline Presence</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#delay-viz">Airline Delays</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#narrative">Understanding the NAS</a>
+                        <a class="nav-link" href="#narrative">Diving into Delays</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#presence-map">Airline Presence</a>
-                    </li>
+                   
                 </ul>
             </nav>
         </header>
 
         <main role="main" class="container">
+
+            <h1>Air Traffic in the National Airspace System</h1>
             
             <p>
-                Every year, Xn flights land in the United States. Although the majority of them arrive
-                on time, frustrating delays still happen.  
+                Every year, the United States National Airspace System makes it possible for just
+                under one billion passengers to reach their destinations. Although the majority of
+                those passengers arrive on time, frustrating delays still happen. In fiscal year
+                2016, 211,966 flights were delayed costing an estimated 22.5 billion dollars in
+                lost revenues and increased expenses. To understand the extent of flight operations
+                in the United States, explore the visual below which shows how many airlines operate
+                across the country, each with a focus or base of operations on a different
+                geographical area.
             </p>
-
-
-            <h1 id="delay-viz">Airline Delays in a Year</h1>
-            <p>
-                
-            </p>
-            <div id="delay-d3"></div>  
-
-            <h1 id="narrative">Understanding the NAS</h1>
-            <h2></h2>
-            <p></p>
-            <br><br><br>
 
             <h1 id="presence-map">Airline Presence Across the US</h1>
             <div class="container text-center">
@@ -67,6 +64,24 @@
                         </div>
                 </div>
             </div> 
+            <p></p>
+
+            <h1 id="delay-viz">Airline Delays in a Year</h1>
+            <div id="delay-d3"></div>  
+
+            <h1 id="narrative">Diving in to Delays</h1>
+            <p>
+                Use this visual to explore how delays of different causes affect different airlines.
+                There are XX types of delay:
+            </p>
+            <ul>
+                <li>Weather</li>
+                <li>NAS</li>
+                <li>Carrier</li>
+                <li>Security</li>
+                <li>Aviation</li>
+                <li>Late Arriving Aircraft</li>
+            </ul>
         </main>
 
         <footer class="footer">
