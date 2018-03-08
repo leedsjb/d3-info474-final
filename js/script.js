@@ -33,7 +33,7 @@ var parseDate = d3v3.time.format("%Y%m%d").parse;
 
 //scales 
 var x = d3v3.time.scale()
-    .range([0, width]);
+    .range([0, width - 100]);
 
 var y = d3v3.scale.linear()
     .range([height, 0]);
@@ -126,7 +126,7 @@ var legend = svg.selectAll('g')
     .attr('class', 'legend');
 
 legend.append('rect')
-    .attr('x', width - 20)
+    .attr('x', width )
     .attr('y', function(d, i) {
     return i * 20;
     })
@@ -137,7 +137,7 @@ legend.append('rect')
     });
 
 legend.append('text')
-    .attr('x', width - 8)
+    .attr('x', width+15)
     .attr('y', function(d, i) {
     return (i * 20) + 9;
     })
@@ -250,7 +250,7 @@ mouseG.append('svg:rect')
     var mouse = d3v3.mouse(this);
     d3v3.select(".mouse-line")
         .attr("d", function() {
-        var d = "M" + mouse[0] + "," + height;
+        var d = "M" + mouse[0] + "," + 450;
         d += " " + mouse[0] + "," + 0;
         return d;
         });
@@ -258,6 +258,7 @@ mouseG.append('svg:rect')
 //get the mouse per line. 
 d3v3.selectAll(".mouse-per-line")
     .attr("transform", function(d, i) {
+    console.log(mouse[0]);
     var xDate = x.invert(mouse[0]),
         bisect = d3v3.bisector(function(d) { return d.date; }).right;
         idx = bisect(d.values, xDate);
@@ -265,7 +266,7 @@ d3v3.selectAll(".mouse-per-line")
     var beginning = 0,
         end = lines[i].getTotalLength(),
         target = null;
-
+ 
     while (true){
         target = Math.floor((beginning + end) / 2);
         pos = lines[i].getPointAtLength(target);
