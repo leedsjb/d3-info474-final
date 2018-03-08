@@ -8,8 +8,11 @@
         <link rel="stylesheet" type ="text/css" href ="./css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/sticky-footer-navbar.css">
-        <!-- <script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script> -->
-        <script src='./js/d3v3.js'></script>
+        <script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
+        <script>
+            d3v3 = d3;
+            window.d3 = null;
+        </script>
         <!-- imports for Jerry's vis -->
         <link href="./d3-geomap/css/d3.geomap.css" rel="stylesheet">
         <script src="./d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
@@ -29,14 +32,16 @@
                         <a class="nav-link" href="#delay-viz">Airline Delays</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#narrative">Diving into Delays</a>
+                        <a class="nav-link" href="#delays">Diving into Delays</a>
                     </li>
-                   
+                    <li class="nav-item">
+                            <a class="nav-link" href="#delaybars">Delays by Cause</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
-        <main role="main" class="container">
+        <main role="main" class="container-fluid">
 
             <h1>Air Traffic in the National Airspace System</h1>
             
@@ -52,36 +57,81 @@
             </p>
 
             <h1 id="presence-map">Airline Presence Across the US</h1>
-            <div class="container text-center">
+            <div class="container">
                 <div class="row">
                     <p id="currentAirline" class="pl-5 text-info">
                         <br>
                     </p>
                 </div>
-                <div class="container row"> 
+                <div class="row"> 
                         <div id="btns" class="col-sm-12 col-md-3 btn-group-vertical"></div>
                         <div id="map" class="pt-5 col-sm-12 col-md-9">
                         </div>
                 </div>
-            </div> 
-            <p></p>
+            
+                <p></p>
 
-            <h1 id="delay-viz">Airline Delays in a Year</h1>
-            <div id="delay-d3"></div>  
+                <h1 id="delay-viz">Airline Delays in a Year</h1>
+                <div id="delay-d3"></div>  
 
-            <h1 id="narrative">Diving in to Delays</h1>
-            <p>
-                Use this visual to explore how delays of different causes affect different airlines.
-                There are XX types of delay:
-            </p>
-            <ul>
-                <li>Weather</li>
-                <li>NAS</li>
-                <li>Carrier</li>
-                <li>Security</li>
-                <li>Aviation</li>
-                <li>Late Arriving Aircraft</li>
-            </ul>
+                <h1 id="delays">Diving in to Delays</h1>
+                <p>
+                    Use this visual to explore how delays of different causes affect different airlines.
+                    There are 5 reported types of delay:
+                </p>
+
+                <div class="row">
+
+                    <div class="card col p-2">
+                        <img class="card-img-top" src="./img/carrier-icon.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Carrier</h5>
+                            <p class="card-text">
+                                Delays resulting from reasons within the airline's control.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col p-2">
+                            <img class="card-img-top" src="./img/weather.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Weather</h5>
+                                <p class="card-text">
+                                    Delays due to weather.
+                                </p>
+                            </div>
+                        </div>
+                    <div class="card col p-2">
+                        <img class="card-img-top" src="./img/us-map.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">NAS</h5>
+                            <p class="card-text">
+                                Airspace system capacity delays.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col p-2">
+                        <img class="card-img-top" src="./img/security.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Security</h5>
+                            <p class="card-text">
+                                Aviation security related delays.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col p-2">
+                        <img class="card-img-top" src="./img/clock.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Late Arriving Aircraft</h5>
+                            <p class="card-text">
+                                Delayed flights as a result of the prior flight flown
+                                by the same aircraft arriving late.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- end container -->
+
             <h1 id="delaybars">Airline Delays By Cause</h1>
             <div class="container">
                 <div class="container row"> 
@@ -95,7 +145,17 @@
 
         <footer class="footer">
             <div class="container">
-                <span class="text-muted">INFO 474 | Winter 2018 | J. Benjamin Leeds, Jerry Li, Dominick Tavitian</span>
+                <div class="text-muted row">
+                    <span col-sm-12>
+                        INFO 474 | Winter 2018 | J. Benjamin Leeds, Jerry Li, Dominick Tavitian | 
+                        Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+                        and <a href="https://www.flaticon.com/authors/iconnice" title="Iconnice">
+                        Iconnice</a> from <a href="https://www.flaticon.com/"
+                        title="Flaticon">www.flaticon.com</a>
+                        licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 
+                        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </span>
+                </div>
             </div>
         </footer>
 
@@ -104,9 +164,10 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
-        <script src="./js/d3.js"></script>
-        <script src="./js/main.js"></script>
+        <!-- <script src="./js/d3.js"></script> -->
+        <!-- <script src="https://d3js.org/d3-scale.v1.js"></script> -->
         <script src="./js/script.js"></script>
-        <script src="./js/delay.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/delay.js"></script>  
     </body>
 </html>
