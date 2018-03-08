@@ -8,8 +8,11 @@
         <link rel="stylesheet" type ="text/css" href ="./css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/sticky-footer-navbar.css">
-        <!-- <script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script> -->
-        <script src='./js/d3v3.js'></script>
+        <script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
+        <script>
+            d3v3 = d3;
+            window.d3 = null;
+        </script>
         <!-- imports for Jerry's vis -->
         <link href="./d3-geomap/css/d3.geomap.css" rel="stylesheet">
         <script src="./d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
@@ -37,8 +40,13 @@
                 </ul>
             </nav>
         </header>
+<<<<<<< HEAD
 
         <main role="main" class="container-fluid">
+=======
+        
+        <main role="main" class="container">
+>>>>>>> d84feabdf8bb1eeabec6caf218071b7ff72fa8b8
 
             <h1>Air Traffic in the National Airspace System</h1>
             
@@ -68,6 +76,7 @@
             
                 <p></p>
 
+<<<<<<< HEAD
                 <h1 id="delay-viz">Airline Delays in a Year</h1>
                 <div id="delay-d3"></div>  
 
@@ -129,6 +138,24 @@
                 </div>
             </div> <!-- end container -->
 
+=======
+            <h1 id="delay-viz">Airline Delays in a Year</h1>
+            <div id="delay-d3"></div>  
+            
+            <h1 id="narrative">Diving in to Delays</h1>
+            <p>
+                Use this visual to explore how delays of different causes affect different airlines.
+                There are XX types of delay:
+            </p>
+            <ul>
+                <li>Weather</li>
+                <li>NAS</li>
+                <li>Carrier</li>
+                <li>Security</li>
+                <li>Aviation</li>
+                <li>Late Arriving Aircraft</li>
+            </ul>
+>>>>>>> d84feabdf8bb1eeabec6caf218071b7ff72fa8b8
             <h1 id="delaybars">Airline Delays By Cause</h1>
             <div class="container">
                 <div class="container row"> 
@@ -161,9 +188,10 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         
-        <script src="./js/d3.js"></script>
-        <script src="./js/main.js"></script>
+        <!-- <script src="./js/d3.js"></script> -->
+        <!-- <script src="https://d3js.org/d3-scale.v1.js"></script> -->
         <script src="./js/script.js"></script>
-        <script src="./js/delay.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/delay.js"></script>  
     </body>
 </html>
