@@ -278,7 +278,7 @@ mouseG.append('svg:rect')
                 return d.date;
             }));
         y = d3.scaleLinear()
-            .range([height, 10])
+            .range([430, 10])
             .domain([
                 d3.min(airlines, function (c) {
                     return d3.min(c.values, function (v) {
