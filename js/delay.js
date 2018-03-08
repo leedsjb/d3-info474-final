@@ -4,12 +4,12 @@ var margin = { top: 20, right: 20, bottom: 30, left: 45 },
     width = 650 - margin.left - margin.right,
     height = 450 - margin.top - margin.bottom;
 
-var x = d3.scaleBand()
-    .range([0, width])
-    .padding(0.1);
+// var x = d3.scaleBand()
+//     .range([0, width])
+//     .padding(0.1);
 
-var y = d3.scaleLinear()
-    .range([height, 0]);
+// var y = d3.scaleLinear()
+//     .range([height, 0]);
 
 var svg = d3.select("#barvis").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -44,7 +44,8 @@ function done(error, delays) {
         btn.classList.add("btn-outline-secondary")
         btn.innerHTML = e;
         btn.name = e;
-        btn.addEventListener("mouseover", () => {filterAirlineDelay(e, displayBar)
+        btn.addEventListener("mouseover", () => {
+            filterAirlineDelay(e, displayBar)
         })
         btngroup.appendChild(btn);
     })
@@ -65,12 +66,12 @@ function filterAirlineDelay(airlineName, _callBack) {
         }
     })
 
-    for(let i = 0; i < delayRawNum.length; i++){
+    for (let i = 0; i < delayRawNum.length; i++) {
         // currentDelayData.push({[header[i]]: delayRawNum[i]});
-        currentDelayData.push({"cause": header[i], "num": +delayRawNum[i]});
+        currentDelayData.push({ "cause": header[i], "num": +delayRawNum[i] });
     }
 
-    currentDelayData.columns = ["cause","num"];
+    currentDelayData.columns = ["cause", "num"];
 
     console.log(currentDelayData)
 
@@ -85,18 +86,28 @@ function displayBar(data) {
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-    x.domain(data.map(function(d){return d.cause}));
-    y.domain([0, d3.max(data, function(d){return d.num})]);
+    x = d3.scaleBand()
+        .range([0, width])
+        .padding(0.1)
+        .domain(data.map(function (d) { return d.cause }));
+
+    y = 
+    d3.scaleLinear()
+        .range([height, 0])
+        .domain([0,117430]); //to keep scale the same across different airline
+        // .domain([0, d3.max(data, function (d) { return d.num })]);
+        //117430 max
+    console.log(y(10));
 
     svg.selectAll(".bar")
         .data(data) //need to pass data format
         .enter().append("rect")
         .attr("class", "bar")
-        .attr("x", function(d){return x(d.cause)})
+        .attr("x", function (d) { return x(d.cause) })
         .attr("width", x.bandwidth())
-        .attr("y", function (d) { return y(d.num)})
+        .attr("y", function (d) { return y(d.num) })
         .attr("height", function (d) { return height - y(d.num); })
-        .attr("fill","#3182bd");
+        .attr("fill", "#3182bd");
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
