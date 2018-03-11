@@ -1,5 +1,7 @@
 // https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4
 
+var dir = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+
 var margin = { top: 20, right: 20, bottom: 30, left: 45 },
     width = 650 - margin.left - margin.right,
     height = 450 - margin.top - margin.bottom;
@@ -18,7 +20,7 @@ var svg = d3.select("#barvis").append("svg")
     .attr("transform",
         "translate(" + margin.left + "," + margin.top + ")");
 
-d3.queue().defer(d3.csv, "../data/DelaySum.csv")
+d3.queue().defer(d3.csv, dir + "/data/DelaySum.csv")
     .await(done)
 
 var allDelayData;
