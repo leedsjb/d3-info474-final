@@ -20,6 +20,7 @@
         <script src="./d3-geomap/js/d3.geomap.min.js"></script>
         <script src="https://d3js.org/d3.v4.js"></script>
     </head>
+
     <body data-spy="scroll" data-target="#navbar" data-offset="0">
 
         <header>
@@ -42,121 +43,104 @@
             </nav>
         </header>
 
-        <main role="main" class="container-fluid">
-
-            <h1>Air Traffic in the National Airspace System</h1>
-            
-            <p>
-                Every year, the United States National Airspace System makes it possible for just
-                under one billion passengers to reach their destinations. Although the majority of
-                those passengers arrive on time, frustrating delays still happen. In fiscal year
-                2016, 211,966 flights were delayed costing an estimated 22.5 billion dollars in
-                lost revenues and increased expenses. To understand the extent of flight operations
-                in the United States, explore the visual below which shows how many airlines operate
-                across the country, each with a focus or base of operations on a different
-                geographical area.
-            </p>
+        <main role="main" class="container">
+            <div class="row">
+                <h1>Air Traffic in the National Airspace System</h1>
+                <p>
+                    Every year, the United States National Airspace System makes it possible for just
+                    under one billion passengers to reach their destinations. Although the majority of
+                    those passengers arrive on time, frustrating delays still happen. In fiscal year
+                    2016, 211,966 flights were delayed costing an estimated 22.5 billion dollars in
+                    lost revenues and increased expenses. To understand the extent of flight operations
+                    in the United States, explore the visual below which shows how many airlines operate
+                    across the country, each with a focus or base of operations on a different
+                    geographical area.
+                </p>
+            </div>
 
             <h1 id="presence-map">Airline Presence Across the US</h1>
-            <div class="container">
-                <div class="row">
-                    <p id="currentAirline" class="pl-5 text-info">
-                        <br>
-                    </p>
-                </div>
-                <div class="row"> 
-                        <div id="btns" class="col-sm-12 col-md-3 btn-group-vertical"></div>
-                        <div id="map" class="pt-5 col-sm-12 col-md-9">
-                        </div>
-                </div>
-            
-                <p></p>
-
-                <h1 id="delay-viz">Airline Delays in a Year</h1>
-                <div id="delay-d3"></div>  
-
-                <h1 id="delays">Diving in to Delays</h1>
-                <p>
-                    Use this visual to explore how delays of different causes affect different airlines.
-                    There are 5 reported types of delay:
+            <div class="row">
+                <p id="currentAirline" class="pl-5 text-info">
+                    <br>
                 </p>
+            </div>
+            <div class="row"> 
+                <div id="btns" class="col-sm-12 col-md-3 btn-group-vertical"></div>
+                <div id="map" class="pt-5 col-sm-12 col-md-9"></div>
+            </div>
+        
+            <p></p>
 
-                <div class="row">
+            <h1 id="delay-viz">Airline Delays in a Year</h1>
+            <div id="delay-d3"></div>  
 
-                    <div class="card col p-2">
-                        <img class="card-img-top" src="./img/carrier-icon.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Carrier</h5>
-                            <p class="card-text">
-                                Delays resulting from reasons within the airline's control.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card col p-2">
-                            <img class="card-img-top" src="./img/weather.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Weather</h5>
-                                <p class="card-text">
-                                    Delays due to weather.
-                                </p>
-                            </div>
-                        </div>
-                    <div class="card col p-2">
-                        <img class="card-img-top" src="./img/us-map.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">NAS</h5>
-                            <p class="card-text">
-                                Airspace system capacity delays.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card col p-2">
-                        <img class="card-img-top" src="./img/security.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Security</h5>
-                            <p class="card-text">
-                                Aviation security related delays.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card col p-2">
-                        <img class="card-img-top" src="./img/clock.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Late Arriving Aircraft</h5>
-                            <p class="card-text">
-                                Delayed flights as a result of the prior flight flown
-                                by the same aircraft arriving late.
-                            </p>
-                        </div>
-                    </div>
+            <h1 id="delays">Diving in to Delays</h1>
+            <p>
+                Use this visual to explore how delays of different causes affect different airlines.
+                There are 5 reported types of delay:
+            </p>
 
+            <div class="row">
+                <div class="card col p-2">
+                    <img class="card-img-top" src="./img/carrier-icon.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Carrier</h5>
+                        <p class="card-text">
+                            Delays resulting from reasons within the airline's control.
+                        </p>
+                    </div>
                 </div>
-            </div> <!-- end container -->
+                <div class="card col p-2">
+                    <img class="card-img-top" src="./img/weather.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather</h5>
+                        <p class="card-text">Delays due to weather.</p>
+                    </div>
+                </div>
+                <div class="card col p-2">
+                    <img class="card-img-top" src="./img/us-map.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">NAS</h5>
+                        <p class="card-text">Airspace system capacity delays.</p>
+                    </div>
+                </div>
+                <div class="card col p-2">
+                    <img class="card-img-top" src="./img/security.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Security</h5>
+                        <p class="card-text">Aviation security related delays.</p>
+                    </div>
+                </div>
+                <div class="card col p-2">
+                    <img class="card-img-top" src="./img/clock.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Late Arriving Aircraft</h5>
+                        <p class="card-text">
+                            Delayed flights as a result of the prior flight flown
+                            by the same aircraft arriving late.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             <h1 id="delaybars">Airline Delays By Cause</h1>
-            <div class="container">
-                <div class="container row"> 
-                    <div id="barbtns" class="col-sm-12 col-md-3 btn-group-vertical"></div>
-                    <div id="barvis" class="pt-5 col-sm-12 col-md-9">
-
-                    </div>
-                </div>
+            <div class="row">  
+                <div id="barbtns" class="col-sm-12 col-md-3 btn-group-vertical"></div>
+                <div id="barvis" class="pt-5 col-sm-12 col-md-9"></div>
             </div>
         </main>
 
         <footer class="footer">
-            <div class="container">
-                <div class="text-muted row">
-                    <span col-sm-12>
-                        INFO 474 | Winter 2018 | J. Benjamin Leeds, Jerry Li, Dominick Tavitian | 
-                        Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
-                        and <a href="https://www.flaticon.com/authors/iconnice" title="Iconnice">
-                        Iconnice</a> from <a href="https://www.flaticon.com/"
-                        title="Flaticon">www.flaticon.com</a>
-                        licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 
-                        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-                    </span>
-                </div>
+            <div class="text-muted row">
+                <span col-sm-12>
+                    INFO 474 | Winter 2018 | J. Benjamin Leeds, Jerry Li, Dominick Tavitian | 
+                    Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+                    and <a href="https://www.flaticon.com/authors/iconnice" title="Iconnice">
+                    Iconnice</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a>
+                    licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 
+                    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                </span>
             </div>
         </footer>
 
